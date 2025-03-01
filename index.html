@@ -3,43 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Recipe Card</title>
-    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="./images/test_logo.jpg" />
+    <title>Test Center</title>
   </head>
   <body>
-    <div class="container" id="container">
-      <div class="recipe-card feature">
-        <img
-          src="./img/cupcake.webp"
-          alt="Red Velvet Cupcake - Photo by luisana zerpa on Unsplash"
-        />
-        <div class="recipe-content">
-          <h1>Red Velvet Cupcakes</h1>
-          <p>
-            This red velvet cupcake recipe yields soft, fluffy cupcakes with a
-            rich chocolate flavor and a vibrant red color. Topped with a creamy
-            and tangy cream cheese frosting, these cupcakes are perfect for any
-            occasion and are sure to impress your guests.
-          </p>
-          <section class="recipe-info">
-            <ul>
-              <li class="recipe-prep-time">
-                <h2>Preparation Time</h2>
-                <p>30 min</p>
-              </li>
-              <li>
-                <h2>Total Time</h2>
-                <p>40 min</p>
-              </li>
-              <li>
-                <h2>Yield</h2>
-                <p>40 min</p>
-              </li>
-            </ul>
-          </section>
-        </div>
-        <a href="#">View recipe</a>
-      </div>
+    <h1>My shopping list</h1>
+
+    <div>
+      <label for="item">Enter a new item:</label>
+      <input type="text" name="item" id="item" />
+      <button class="add-btn">Add item</button>
     </div>
+
+    <ul></ul>
+    <script src="./script.js"></script>
+    <script src="./testing.js"></script>
   </body>
 </html>
