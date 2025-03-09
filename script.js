@@ -1,18 +1,9 @@
 "use strict";
 
-//Filter range "in place"
+// Sort in decreasing order
 
-function filterRangeInPlace(arr, min, max) {
-  const filtered = arr.filter((num) => num >= min && num <= max);
-  console.log(filtered);
+let arr = [5, 2, 1, -10, 8];
 
-  arr.length = 0;
+arr.sort((a, b) => b - a);
 
-  arr.push(...filtered);
-}
-
-let arrNumbers = [5, 3, 8, 1, 6, 0, -1, 2, 1, 5];
-
-filterRangeInPlace(arrNumbers, 1, 4);
-
-console.log(arrNumbers);
+console.log(arr);
