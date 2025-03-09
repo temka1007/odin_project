@@ -1,14 +1,18 @@
 "use strict";
 
-// Filter range
+//Filter range "in place"
 
-function filterRange(arr, min, max) {
-  return arr.filter((num) => num >= min && num <= max);
+function filterRangeInPlace(arr, min, max) {
+  const filtered = arr.filter((num) => num >= min && num <= max);
+  console.log(filtered);
+
+  arr.length = 0;
+
+  arr.push(...filtered);
 }
 
-let arr = [5, 3, 8, 1, 6, 0, -1, 2, 1, 5];
+let arrNumbers = [5, 3, 8, 1, 6, 0, -1, 2, 1, 5];
 
-let filtered = filterRange(arr, 1, 4);
+filterRangeInPlace(arrNumbers, 1, 4);
 
-console.log(filtered);
-console.log(arr);
+console.log(arrNumbers);

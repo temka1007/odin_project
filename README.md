@@ -64,4 +64,4 @@ Searching in array
 
     .map() => apply transformation function to each element of array
 
-
+! NOTE: array.length = 0; it clears the array without breaking its referance.
