@@ -1,17 +1,14 @@
 "use strict";
 
-function camelize(str) {
-  let arr = str.split("-");
-  if (str.charAt(0) == "-") {
-    return arr
-      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-      .join("");
-  } else {
-    return arr
-      .map((word, index) =>
-        index == 0 ? word : word.charAt(0).toUpperCase() + word.slice(1)
-      )
-      .join("");
-  }
+// Filter range
+
+function filterRange(arr, min, max) {
+  return arr.filter((num) => num >= min && num <= max);
 }
-console.log(camelize("-webkit-transition"));
+
+let arr = [5, 3, 8, 1, 6, 0, -1, 2, 1, 5];
+
+let filtered = filterRange(arr, 1, 4);
+
+console.log(filtered);
+console.log(arr);
