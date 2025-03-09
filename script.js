@@ -1,9 +1,14 @@
 "use strict";
 
-// Sort in decreasing order
+// copy and sort array
 
-let arr = [5, 2, 1, -10, 8];
+function copySorted(arr) {
+  return [...arr].sort();
+}
 
-arr.sort((a, b) => b - a);
+let arr = ["HTML", "JavaScript", "CSS"];
+
+let sorted = copySorted(arr);
 
 console.log(arr);
+console.log(sorted);
