@@ -1,14 +1,17 @@
 "use strict";
 
-// copy and sort array
+const output = document.querySelector(".output");
 
-function copySorted(arr) {
-  return [...arr].sort();
+for (let i = 10; i >= 0; i--) {
+  setTimeout(() => {
+    if (i == 0) {
+      const blastOff = document.createElement("p");
+      blastOff.textContent = "Blast Off !!!";
+      output.appendChild(blastOff);
+    } else {
+      const countdown = document.createElement("p");
+      countdown.textContent = `Countdown ${i}`;
+      output.appendChild(countdown);
+    }
+  }, (10 - i) * 1000);
 }
-
-let arr = ["HTML", "JavaScript", "CSS"];
-
-let sorted = copySorted(arr);
-
-console.log(arr);
-console.log(sorted);

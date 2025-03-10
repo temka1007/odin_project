@@ -65,3 +65,44 @@ Searching in array
     .map() => apply transformation function to each element of array
 
 ! NOTE: array.length = 0; it clears the array without breaking its referance.
+
+Loop
+// Looping through array collection
+
+    1. the for ... of loop - one of the basic loops
+        - for ... of (it is recommented over "for loop" while looping through collection)
+
+    2. map() and filter() are both loop type.
+
+    // The standard for loop
+
+    3. for loop
+
+        - for (initializer; condition; final expression) {}
+
+    // Exiting from loop
+    4. "break" this statement will immediately exit the loop
+
+    5. "continue" skip to next iteration of loop
+
+    // While and do ... while
+
+        6. (while) loop
+
+            initializer
+            while (condition) {
+                code to run
+
+                ! final-expression
+            }
+
+        7. (do ... while) loop
+
+            initializer
+            do {
+                code to run
+
+                ! final expression
+            } while (condition)
+
+
