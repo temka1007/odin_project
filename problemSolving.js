@@ -1,7 +1,17 @@
-const palindromes = function (words) {
-  let characters = words.toLowerCase().replace(/[^a-z0-9]/gi, "");
-  let reversed = characters.split("").reverse().join("");
-  return reversed == characters;
+const fibonacci = function (target) {
+  function nextFibonacci(numbers) {
+    if (numbers.length < 2) {
+      return 1;
+    } else {
+      return store.at(-1) + store.at(-2);
+    }
+  }
+  let store = [];
+  for (let i = 0; i < target; i++) {
+    store.push(nextFibonacci(store));
+  }
+  console.log(store);
+  return store.at(-1);
 };
 
-console.log(palindromes("A car, a man, a maraca."));
+console.log(fibonacci(6));
