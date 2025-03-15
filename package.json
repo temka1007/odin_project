@@ -1,0 +1,20 @@
+{
+  "name": "odin_project",
+  "version": "1.0.0",
+  "description": "Second attempt.",
+  "main": "problemSolving.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/temka1007/odin_project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/temka1007/odin_project/issues"
+  },
+  "homepage": "https://github.com/temka1007/odin_project#readme"
+}
