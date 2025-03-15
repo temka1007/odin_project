@@ -1,11 +1,10 @@
-const leapYears = function (year) {
-  if (year % 400 == 0) return true;
-  if (year % 100 == 0) return false;
-  if (year % 4 == 0) {
-    return true;
-  } else {
-    return false;
-  }
+const convertToCelsius = function (fahrenheit) {
+  return parseFloat(((fahrenheit - 32) * (5 / 9)).toFixed(1));
 };
 
-console.log(leapYears(1997));
+const convertToFahrenheit = function (celsius) {
+  return parseFloat((celsius * (9 / 5) + 32).toFixed(1));
+};
+
+console.log(convertToCelsius(100));
+console.log(convertToFahrenheit(100));
