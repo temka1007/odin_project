@@ -1,25 +1,11 @@
-const sumAll = function (min, max) {
-  if (!Number.isInteger(min)) return "ERROR";
-  if (!Number.isInteger(max)) return "ERROR";
-  if (min < 0 || max < 0) return "ERROR";
-
-  let lowerNum;
-  let higherNum;
-
-  if (min < max) {
-    lowerNum = min;
-    higherNum = max;
-  } else if (min > max) {
-    lowerNum = max;
-    higherNum = min;
+const leapYears = function (year) {
+  if (year % 400 == 0) return true;
+  if (year % 100 == 0) return false;
+  if (year % 4 == 0) {
+    return true;
+  } else {
+    return false;
   }
-
-  let result = 0;
-  for (let i = lowerNum; i < higherNum + 1; i++) {
-    result += i;
-  }
-  return result;
 };
 
-console.log(sumAll(4, 2));
-console.log();
+console.log(leapYears(1997));
