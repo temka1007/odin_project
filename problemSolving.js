@@ -1,27 +1,7 @@
-const add = function (num1, num2) {
-  return num1 + num2;
+const palindromes = function (words) {
+  let characters = words.toLowerCase().replace(/[^a-z0-9]/gi, "");
+  let reversed = characters.split("").reverse().join("");
+  return reversed == characters;
 };
 
-const subtract = function (num1, num2) {
-  return num1 - num2;
-};
-
-const sum = function (numbers) {
-  return numbers.reduce((acc, num) => acc + num, 0);
-};
-
-const multiply = function (numbers) {
-  return numbers.reduce((acc, num) => acc * num, 1);
-};
-
-const power = function (num, power) {
-  return num ** power;
-};
-
-const factorial = function (num) {
-  let accumulation = 1;
-  for (let i = 1; i < num + 1; i++) {
-    accumulation = accumulation * i;
-  }
-  return accumulation;
-};
+console.log(palindromes("A car, a man, a maraca."));
